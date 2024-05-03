@@ -36,6 +36,15 @@ $("#courseTableBody").on('click','tr',function (){
     $("#course-name").val(cName);
     $("#course-description").val(description);
 })
+$("#courseUpdateBtn").on('click',function (){
+    let cId = $("#course-id").val();
+    let cName = $("#course-name").val();
+    let description = $("#course-description").val();
+
+    courses[courseRecord].Name = cName;
+    courses[courseRecord].description = description;
+    courseTableLoad();
+})
 $("#courseResetBtn").on('click',function (){
      $("#course-id").val("");
      $("#course-name").val("");

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96e00a46-0575-494a-b820-057acdb63da6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/file/course.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/file/student_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/file/student.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/student.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/file/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/file/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +77,25 @@
       <workItem from="1714707668073" duration="392000" />
       <workItem from="1714708232949" duration="93000" />
       <workItem from="1714708363576" duration="6731000" />
-      <workItem from="1714732187406" duration="797000" />
+      <workItem from="1714732187406" duration="1553000" />
+      <workItem from="1714733759507" duration="714000" />
+      <workItem from="1714734608976" duration="2256000" />
     </task>
+    <task id="LOCAL-00001" summary="course crud">
+      <created>1714733079918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714733079918</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="course crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="course crud" />
   </component>
 </project>
