@@ -1,5 +1,7 @@
 var courses = [];
 let courseRecord;
+
+//submit button
 $("#courseSubmitBtn").on('click', () => {
     let cId = $("#course-id").val();
     let cName = $("#course-name").val();
@@ -13,6 +15,7 @@ $("#courseSubmitBtn").on('click', () => {
     courses.push(course);
     courseTableLoad();
 });
+//load course table
 function courseTableLoad() {
     $("#courseTableBody").empty();
     courses.map((item, index) => {
@@ -24,6 +27,7 @@ function courseTableLoad() {
         $("#tableCourse").append(record);
     });
 }
+//load data to the text fields when clicked
 $("#courseTableBody").on('click','tr',function (){
     let index = $(this).index();
     courseRecord = index;
@@ -36,6 +40,8 @@ $("#courseTableBody").on('click','tr',function (){
     $("#course-name").val(cName);
     $("#course-description").val(description);
 })
+
+//update button
 $("#courseUpdateBtn").on('click',function (){
     let cId = $("#course-id").val();
     let cName = $("#course-name").val();
@@ -45,11 +51,13 @@ $("#courseUpdateBtn").on('click',function (){
     courses[courseRecord].description = description;
     courseTableLoad();
 })
+//reset button
 $("#courseResetBtn").on('click',function (){
      $("#course-id").val("");
      $("#course-name").val("");
      $("#course-description").val("");
 })
+//delete button
 $("#courseDeleteBtn").on('click',function (){
     courses.splice(courseRecord,1);
     courseTableLoad();
