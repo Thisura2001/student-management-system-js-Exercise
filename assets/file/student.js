@@ -16,6 +16,8 @@
 });
     let students=[];
     let clickedRecord;
+
+    //load data to the table
     function loadTable(){
     $('#tableBody').empty();
     students.map((item,index)=>{
@@ -27,12 +29,11 @@
             <td class="colcName">${item.course}</td>
         </tr>`;
     $('#studenttable').append(record);
-});
 
-
-
+    });
 }
 
+    //submit button
     $('#submitBtn').on('click',()=>{
 
     let id=$('#studentId').val();
@@ -57,27 +58,6 @@
 
     students.push(student);
     loadTable();
-    $('#resetBtn').click();
-    console.log(students[0]);
-
-
-
-
-    console.log("clickedCourse");
-    console.log("id "+student.id);
-    console.log("first name "+ student.fname);
-    console.log("last name "+ student.lname);
-    console.log("address "+ student.address);
-    console.log("course"+ student.course);
-    /*var record= `<tr>
-        <th scope="row" class="colID">${id}</th>
-        <td class="colfname">${fname}</td>
-        <td class="collName">${laname}</td>
-        <td class="colAddress">${address}</td>
-        <td class="colcName">${cName}</td>
-    </tr>`;
-    $('#studenttable').append(record);
-*/
 });
     $('#tableBody').on('click','tr',function (){
     let index=$(this).index();
@@ -97,8 +77,11 @@
     $('#fName').val(fname);
     $('#lName').val(lname);
     $('#studentaddress').val(address);
-    $(`input[name="flexRadioDefault"][value=${course}]`).prop('checked', true);})
+    $(`input[name="flexRadioDefault"][value=${course}]`).prop('checked', true);
 
+    });
+
+    //reset button
     $('#resetBtn').on('click',()=>{
     $('#studentId').val("");
     $('#fName').val("");
@@ -106,6 +89,7 @@
     $('#studentaddress').val("");
     $(`input[name="flexRadioDefault"]`).prop('checked', false);
 });
+    //update student
     $('#updateBtn').on('click',()=>{
 
     let id=$('#studentId').val();
@@ -121,9 +105,8 @@
     loadTable();
 
 });
+    //delete button
     $('#deleteBtn').on('click',()=>{
     students.splice(clickedRecord, 1);
     loadTable();
 });
-
-
