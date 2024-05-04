@@ -1,6 +1,8 @@
 import StudentModel from "./StudentModel.js"; // default
 // import {StudentModel} from "./StudentModel.js"; // export
-    $('#nav-student').on('click',()=>{
+import {students} from "./db.js";
+
+$('#nav-student').on('click',()=>{
 
     $('#coursePage').removeClass("open");
     $('#studentPage').removeClass("close");
