@@ -1,4 +1,5 @@
-var courses = [];
+import courseModel from "./courseModel.js";
+import {courses} from "./db.js";
 let courseRecord;
 
 //submit button
@@ -7,11 +8,12 @@ $("#courseSubmitBtn").on('click', () => {
     let cName = $("#course-name").val();
     let description = $("#course-description").val();
 
-    let course = {
-        id: cId,
-        Name: cName,
-        description: description,
-    }
+    let course = new courseModel(cId,cName,description);
+    // let course = {
+    //     id: cId,
+    //     Name: cName,
+    //     description: description,
+    // }
     courses.push(course);
     courseTableLoad();
 });
