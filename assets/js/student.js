@@ -1,4 +1,5 @@
-
+import StudentModel from "./StudentModel.js"; // default
+// import {StudentModel} from "./StudentModel.js"; // export
     $('#nav-student').on('click',()=>{
 
     $('#coursePage').removeClass("open");
@@ -14,7 +15,7 @@
     $('#coursePage').addClass("open");
     console.log("clickedCourse");
 });
-    let students=[];
+    // let students=[];
     let clickedRecord;
 
     //load data to the table
@@ -42,19 +43,21 @@
     let address=$('#studentaddress').val();
     let cName =$('input[name="flexRadioDefault"]:checked').val();
 
-    let student={
-    id:id,
-    fname:fname,
-    lname:laname,
-    address:address,
-    course:cName,
-    age:55,
 
-    call: ()=>{
-    console.log("saved");
-}
-
-}
+    let student = new StudentModel(id,fname,laname,address,cName);
+//     let student={
+//     id:id,
+//     fname:fname,
+//     lname:laname,
+//     address:address,
+//     course:cName,
+//     age:55,
+//
+//     call: ()=>{
+//     console.log("saved");
+// }
+//
+// }
 
     students.push(student);
     loadTable();
