@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96e00a46-0575-494a-b820-057acdb63da6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/courseModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/StudentModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Model/StudentModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/courseModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Model/courseModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/Db/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/student.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +49,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\thisu\Desktop\JavaScript\student-management-system\Db" />
+      <recent name="C:\Users\thisu\Desktop\JavaScript\student-management-system\Model" />
+      <recent name="C:\Users\thisu\Desktop\JavaScript\student-management-system\Controller" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +100,10 @@
       <workItem from="1714837737625" duration="17000" />
       <workItem from="1714838338129" duration="33000" />
       <workItem from="1714838394020" duration="1000" />
-      <workItem from="1714838538003" duration="2810000" />
+      <workItem from="1714838538003" duration="3578000" />
+      <workItem from="1714877991815" duration="702000" />
+      <workItem from="1714898074994" duration="4000" />
+      <workItem from="1714898296458" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="course crud">
       <created>1714733079918</created>
@@ -135,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1714837158840</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" apply mvc for the course">
+      <created>1714841520100</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714841520100</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="course crud" />
     <MESSAGE value="mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc" />
+    <MESSAGE value=" apply mvc for the course" />
+    <option name="LAST_COMMIT_MESSAGE" value=" apply mvc for the course" />
   </component>
 </project>

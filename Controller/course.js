@@ -1,5 +1,5 @@
-import courseModel from "./courseModel.js";
-import {courses} from "./db.js";
+import courseModel from "../Model/courseModel.js";
+import {courses} from "../Db/db.js";
 let courseRecord;
 
 //submit button

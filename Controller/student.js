@@ -1,6 +1,6 @@
-import StudentModel from "./StudentModel.js"; // default
+import StudentModel from "../Model/StudentModel.js"; // default
 // import {StudentModel} from "./StudentModel.js"; // export
-import {students} from "./db.js";
+import {students} from "../Db/db.js";
 
 $('#nav-student').on('click',()=>{
 
